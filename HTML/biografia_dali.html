@@ -1,0 +1,126 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+    <title>Moje hobby</title>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="surrealizm, malarstwo, surrealiści, artyści, sztuka" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+    <script>
+    function kolorki() {
+        document.getElementById("kolor").style.color = "maroon";
+}
+    </script>
+
+
+</head>
+
+
+<body onload="czas()">
+
+
+    <div id="tytul">
+
+     
+
+   
+
+
+        <h2 id="kolor">
+            Malarstwo surrealistyczne
+            <button onclick="kolorki()">:)</button>
+        </h2>
+    </div>
+
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+
+    <div id="tekst">
+
+
+
+        <p class="tytul">Salvador Dali</p>
+        <p class="tekst">
+
+
+
+            Salvador Domenec Felip Jacint Dali i Domenech, marques de Dali de Pubol - Kataloński malarz, jeden z najbardziej znanych surrealistów.<br />
+            Jest jednym z bardziej rozpoznawalnych artystów XX wieku. Postrzegany bywał jako skrajny ekscentryk, wymyślił własną metodę surrealistyczną zwaną paranoiczno-krytyczną.
+            <br />
+            Urodził się 11 maja 1904 roku w małym mieście Figueres w Katalonii, w pónocnej Hiszpanii, w rodzinie notariusza. Jego talent był widoczny już w dzieciństwie. Lekcje rysunku zaczął pobierać w wieku dziesięciu lat, a mając lat czternaście zaczął z sukcesem wystawiać swoje obrazy. Jego pierwsze zauroczenie sztuką wiązało się z impresjonizmem, który poznawał dzięki znajomemu ojca, przyjacielowi Picassa, katalońskiemu artyście malującemu w stylu impresjonistycznym, Ramonowi Pichotowi. W wieku 23 lat dostał od ojca prasę drukarską.
+            <br />
+            W 1928 przeprowadził się do Paryża. Za wstawiennictwem Joana Miró  Salvador Dalí stał się pełnoprawnym członkiem grupy surrealistów.
+            <br />
+            Poznanie Gali w 1929 miało wielki wpływ na życie i twórczość artysty. Gala, czyli Helena Diakonova, była rosyjską imigrantką, starszą od Dalego o 10 lat. Kiedy ją poznał, była żoną poety Paula Eluarda. Gala odeszła od Paula wybierając życie z Dalim. W roku 1932 rozwiodła się z Paulem Eluardem, a dwa lata póniej wzięła z Dalim ślub cywilny w Paryżu, a w 1958 r. Ślub kościelny. Stała sią jego towarzyszką, muzą, miłością, modelką, opiekowała się również finansami artysty. Najważniejsze jest jednak to, że stała się czynnikiem stabilizującym jego życie. To ona kierowała Dalim w 1930 roku podczas wystaw w Europie i Stanach Zjednoczonych, które zakończyły się sukcesem.
+            <br>10 czerwca 1982 roku zmarła Gala. W maju 1983 r. Dalí namalował swój ostatni obraz, „Jaskółczy ogon”. Schorowany, zmarł 23 stycznia 1989 roku.<br /><br /><br /><br /><br /><br /><br />
+            Źródło: <a href="https://pl.wikipedia.org/wiki/Salvador_Dali">Wikipedia</a>
+
+
+        </p>
+
+</div>
+
+    <div id="footer">
+
+        <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+        </script>
+
+    </div>
+    <div id="nazwisko">
+        <h4>Laura Żuchowska</h4>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+    <title>Moje hobby</title>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="surrealizm, malarstwo, surreali�ci, arty�ci, sztuka" />
+    <link rel="stylesheet" href="style.css" media="only screen and (min-width:1200px) and (max-width:9000px)" type="text/css" />
+    <link rel="stylesheet" href="style_responsive.css" media="only screen and (min-width:200px) and (max-width:1199px)" type="text/css" />
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+</head>
+
+
+<body onload="czas()">
+
+
+    <div id="tytul">
+        <h2>Malarstwo surrealistyczne</h2>
+    </div>
+
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+
+    <div id="tekst">
+        <p class="tytul">O surrealizmie...</p>
+        <p class="tekst">
+            Jest to kierunek w sztuce, który powstał w roku 1924 we Francji. Termin "surrealizm" stworzył w 1917 roku Guillaume Apollinaire<br /><br />
+            Założeniem i fundamentem tego kierunku miało być zaprzeczenie klasycyzmowi, racjonalizmowi i konwencjom w sztuce. Jest to rodzaj buntu przeciwko realizmowi.<br /><br />
+            Artyści starali się kreować obrazy burzące logiczny porządek rzeczywistości. Bardzo często były to wizje onirystyczne, z pogranicza jawy.<br /><br />
+            Bardzo znanymi artystami tego gatunku byli:<br />
+            - Salvador Dali,<br />
+            - Max Ernst,<br />
+            - Hieronim Bosch (uważany za średniowiecznego prekursora kierunku),<br />
+            - Marcel Duchamp,<br />
+            oraz wielu innych.<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            Źródło: <a href="https://pl.wikipedia.org/wiki/Surrealizm">Wikipedia</a>
+
+        </p>
+
+    </div>
+
+    <div id="footer">
+
+        <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+        </script>
+
+    </div>
+    <div id="nazwisko">
+        <h4>Laura Żuchowska</h4>
+    </div>
+
+</body>
+</html>

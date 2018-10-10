@@ -1,0 +1,153 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+    <title>Moje hobby</title>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="surrealizm, malarstwo, surreali�ci, arty�ci, sztuka" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+		$(function() {
+
+			$('.miniatury ul li:first-child a img').css('opacity',0.5);
+
+			$(".miniatury a").click(function(){
+
+				$('.miniatury a img').css('opacity',1);
+				$(this).children().css('opacity',0.5);
+
+				var sciezka = $(this).attr("href");
+				var tytul = $(this).attr("title");
+
+				$(".duzy").attr({ src: sciezka, alt: tytul });
+
+				return false;
+			});
+
+		});
+    </script>
+
+</head>
+
+
+<body onload="czas()">
+
+
+    <div id="tytul">
+        <h2>Malarstwo surrealistyczne</h2>
+    </div>
+
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+    <div id="tekst">
+        <p class="tytul">Galeria obrazów Jacka Yerki</p>
+
+
+        <div id="pudlo">
+
+            <div class="galeria">
+                <img class="duzy" src="img/jy1.jpg" alt="Duże zdjęcie 1 - tytul obrazu">
+            </div>
+            <div class="miniatury">
+                <ul>
+                    <li>
+                        <a href="img/jy1.jpg" title="Obraz 1">
+                            <img src="img/jy1_miniatura.jpg" alt="miniaturka - tytul" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/jy2.jpg" title="Obraz 2">
+                            <img src="img/jy2_miniatura.jpg" alt="miniaturka - tytul" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/jy3.jpg" title="Obraz 3">
+                            <img src="img/jy3_miniatura.jpg" alt="miniaturka - tytul" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/jy4.jpg" title="Obraz 4">
+                            <img src="img/jy4_miniatura.jpg" alt="miniaturka - tytul" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/jy5.jpg" title="Obraz 5">
+                            <img src="img/jy5_miniatura.jpg" alt="miniaturka - tytul" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/jy6.jpg" title="Obraz 3">
+                            <img src="img/jy6_miniatura.jpg" alt="miniaturka - tytul" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div id="footer">
+
+        <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+        </script>
+
+    </div>
+    <div id="nazwisko">
+        <h4>Laura Żuchowska</h4>
+    </div>
+</body>
+</html>

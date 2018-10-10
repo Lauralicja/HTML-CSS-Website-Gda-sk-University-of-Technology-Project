@@ -1,0 +1,145 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+    <title>Moje hobby</title>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="surrealizm, malarstwo, surrealisci, artysci, sztuka" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+
+</head>
+
+
+<body onload="czas()">
+
+
+    <div id="tytul">
+        <h2>Malarstwo surrealistyczne</h2>
+    </div>
+
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+
+    <div id="tekst">
+        <p class="tytul">Ankieta</p>
+
+
+        <form action="mailto:laura1997.05@gmail.com?subject=Malarstwo_surrealistyczne-opinia" enctype="text/plain" method="post">
+
+            <p class="kontakt"><label>Imię: <input type="text" name="imie" /></label><br/></p>
+
+
+            <p class="kontakt"><label>Nazwisko: <input type="text" name="nazwisko" /></label><br/></p>
+
+
+            <p class="kontakt">
+                Jakie jest twoje wykształcenie?
+                <select name="wyksztalcenie">
+                    <option>podstawowe</option>
+                    <option>gimnazjalne</option>
+                    <option>zasadnicze zawodowe</option>
+                    <option>średnie</option>
+                    <option>wyższe</option>
+                </select>
+            </p>
+
+            <p class="kontakt">
+                Którzy artyści ci się spodobali?<br/>
+                <input type="checkbox" name="artysci" value="dali" />S. Dali
+                <input type="checkbox" name="artysci" value="beksinski" />Z. Beksiński
+                <input type="checkbox" name="artysci" value="yerka" />J. Yerka
+                <input type="checkbox" name="artysci" value="bosch" />H. Bosch
+                <input type="checkbox" name="artysci" value="zaden" />�aden
+            </p>
+
+
+            <p class="kontakt">
+                Czy podoba ci się moja strona?<br/>
+                <input type="radio" name="czy_podoba" value="tak" />Tak! Jest super!
+                <input type="radio" name="czy_podoba" value="srednio" />Jest OK, ale możesz coś zmienić
+                <input type="radio" name="czy_podoba" value="nie" />Nie, nie podoba mi się
+            </p>
+
+
+
+            <p class="kontakt">
+                Czy uważasz, że powinnam coś zmienić w wyglśdzie strony?<br/><br/><br/>
+                <textarea name="opinia" rows="10" cols="30">Wpisz swoją opinię...</textarea>
+                <br/>
+
+                <input type="submit" value="Wyślij" />
+                <input type="reset" value="Wyczyść formularz" />
+            </p>
+
+
+
+            
+        </form>
+
+        </div>
+
+        <div id="footer">
+
+            <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+            </script>
+
+        </div>
+        <div id="nazwisko">
+            <h4>Laura Żuchowska</h4>
+        </div>
+
+
+</body>
+</html>

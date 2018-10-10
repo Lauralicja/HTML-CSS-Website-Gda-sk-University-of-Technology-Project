@@ -1,0 +1,97 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+    <title>Moje hobby</title>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="surrealizm, malarstwo, surreali�ci, arty�ci, sztuka" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+</head>
+
+
+<body onload="czas()">
+
+
+    <div id="tytul">
+        <h2>Malarstwo surrealistyczne</h2>
+    </div>
+
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+    <div id="tekst">
+        <p class="tytul">Hieronim Bosch</p>
+        <p class="tekst">
+            Jeroen Anthoniszoon van Aken -   niderlandzki malarz i rysownik przełomu późnego gotyku i wczesnego renesansu północnego, kontynuator stylu malarskiego ostatniej generacji prymitywistów flamandzkich. Przez wielu uznany za prekursora XX-wiecznego surrealizmu.<br/>Pochodził z rodziny malarzy van Aken, znanej już ze źródeł w XIII wieku, najprawdopodobniej z Akwizgranu; w języku niderlandzkim nazwa ta oznacza dawną stolicę cesarstwa Karola Wielkiego. Sygnował niektóre obrazy jako Bosch – skrót od miasta swego urodzenia – ’s-Hertogenbosch w którym spędził większą część życia. To miasto obecnie leżące w południowej Holandii, za życia artysty usytuowane było w północnej części historycznej Brabancji, wchodzącej w skład Księstwa Burgundii.
+             <br/>Niewiele wiadomo o jego życiu. Jako 13-latek był świadkiem wielkiego pożaru – temu traumatycznemu przeżyciu niektórzy przypisują dziwaczność jego dzieł. Około 1480 roku poślubił Aleyt Goyaerts van der Meervenne, córkę Postelliny i Goyarta wywodzących się z bogatego rodu. Aleyt wniosła Boschowi w posagu żyzne tereny wraz z miasteczkiem Oirschot, którymi artysta zarządzał, mimo konfliktów z rodzicami małżonki. Był zręcznym administratorem.
+            <br/>Za życia zyskał sławę, o czym świadczą zapisy w rejestrach cechowych, zlecenie namalowania Sądu Ostatecznego dla księcia burgundzkiego Filipa Pięknego, czy obecność jego dzieł na dworach, m.in. Kuszenie św. Antoniego znajdowało się w zbiorach Małgorzaty Habsburskiej, namiestniczki Niderlandów. Ponadto wśród zleceniodawców Boscha pojawiają się nazwiska van Hoss i Bergh, dwóch znakomitych rodów ’s-Hertogenbosch. Malarz tworzył też w kilku okolicznych miejscowościach.
+            <br/>W księdze z Bractwa Najświętszej Marii Panny (dla którego Bosch pracował) znaleziono zapiski o jego śmierci w roku 1516.
+            <br/><br/><br/><br/><br/><br/><br/>
+           Źródło: <a href="https://pl.wikipedia.org/wiki/Hieronim_Bosch">Wikipedia</a>
+        </p>
+
+    </div>
+
+    <div id="footer">
+
+        <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+        </script>
+
+    </div>
+    <div id="nazwisko">
+        <h4>Laura Żuchowska</h4>
+    </div>
+
+</body>
+</html>

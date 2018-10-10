@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+    <title>Moje hobby</title>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="surrealizm, malarstwo, surrealiści, artyści, sztuka" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+
+</head>
+
+
+<body onload="czas()">
+
+
+    <div id="tytul">
+        <h2>Malarstwo surrealistyczne</h2>
+    </div>
+
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+
+    <div id="tekst">
+        <p class="tytul">Kontakt</p>
+
+
+        <form action="mailto:laura1997.05@gmail.com?subject=Malarstwo_surrealistyczne-opinia" enctype="text/plain" method="post">
+
+
+            <p class="kontakt">
+                Masz jakieś pytania?<br/>
+                Może potrzebujesz więcej informacji odnośnie artystów?<br/>
+                Skontaktuj się ze mną!<br/>
+
+                <label>Podaj swój e-mail: <input type="text" name="email" /></label><br/><br/>
+
+
+                <textarea name="kontakt" rows="20" cols="50">Napisz do mnie!</textarea><br/>
+                <br/>
+
+                <input type="submit" value="Wyślij" />
+                <input type="reset" value="Wyczyść formularz" />
+            </p>
+        </form>
+
+        <div id="result"></div>
+        <script>
+        if (typeof (Storage) !== "undefined") {
+            localStorage.setItem("artysta", "Hieronim Bosch - ten napis to local storage.");
+            document.getElementById("result").innerHTML = localStorage.getItem("artysta");
+        } else {
+            document.getElementById("result").innerHTML = "Twoja przeglądarka nie obsługuje localstorage!";
+        }
+
+        </script>
+
+        </div>
+        <div id="footer">
+
+            <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+            </script>
+
+        </div>
+        <div id="nazwisko">
+            <h4>Laura Żuchowska</h4>
+        </div>
+
+</body>
+</html>

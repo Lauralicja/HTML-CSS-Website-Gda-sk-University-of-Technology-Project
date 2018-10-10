@@ -1,0 +1,130 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+    <title>Moje hobby</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="surrealizm, malarstwo, surreali�ci, arty�ci, sztuka" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+    <script src="storage.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function () {
+                $("#p1").mousedown(function () {
+                    alert("To jest komunikat!");
+                });
+            });
+    </script>
+
+</head>
+
+
+<body onload="czas()">
+
+
+    <div id="tytul">
+        <h2>Malarstwo surrealistyczne</h2>
+    </div>
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+
+
+
+    <div id="tekst">
+        <p class="tytul">Zawartość dodatkowa</p>
+        <p class="odnosniki">
+            <br/><a href="kontakt.html">Kontakt</a><br/><br/>
+            <a href="ankieta.html">Ankieta</a>
+        </p>
+        <p class="tekst">
+            <marquee behavior="slide">"Nie biorę narkotyków – sam jestem narkotykiem."<br/>~ Salvador Dali</marquee>
+        </p>
+
+
+        <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+
+            <path d="M30, 110 H210 L70,250 L30, 110" fill="none" stroke="black" stroke-width="2" id="theMotionPath" />
+
+            <circle cx="" cy="" r="5" transform="scale(2)">
+                <animateMotion dur="3s" repeatCount="indefinite">
+                    <mpath xlink:href="#theMotionPath" />
+                </animateMotion>
+            </circle>
+        </svg>
+        
+   
+
+        <p class="tekst" id="p1">Jak naciśniesz na ten napis, to wyświetli się komunikat</p><br/><br /><br />
+
+        
+            <p class="tekst"><button onclick="clickCounter()" type="button">Wciśnij ten przycisk</button></p>
+        <div id="result">
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+
+        <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+        </script>
+
+    </div>
+    <div id="nazwisko">
+        <h4>Laura Żuchowska</h4>
+    </div>
+
+
+</body>
+</html>

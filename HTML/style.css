@@ -1,0 +1,365 @@
+/*STRONA*/
+
+body
+{
+background-color:white;
+}
+
+h2
+{
+text-align:center;
+font-size:60px;
+font-style:italic;
+color:black;
+}
+
+
+
+h4
+{
+font-style: normal;
+color:white;
+font-size:15px;
+text-align:right;
+}
+
+
+img.glowna
+{
+    padding:10px;
+    margin-left:40px;
+    width:25%;
+}
+
+img.artysci
+{
+    display:block;
+    float:right;
+    margin-right:100px;
+    width:25%;
+
+}
+
+
+circle
+{
+    fill:maroon;
+
+    
+}
+
+/*MENU*/
+
+
+ nav{
+        background-color:#A3906A;
+        width:auto;
+        
+        text-align:center;
+        padding:10px;
+        position:relative;
+        }
+
+    	aside span.expand 
+	{
+    
+	display:inline-block;
+    
+	cursor:pointer;
+
+
+	}
+     
+	aside 
+	{
+        
+        
+	color:black;
+        
+        
+	float: none;
+       
+	 background-color:#A3906A;
+        
+	height:40px;
+       
+	background-size:auto;
+        
+    
+	}
+
+ol
+{
+list-style-type:none;
+padding:0;
+margin:0;
+height:2em;
+line-height: 2em;
+}
+
+           ol li
+             {
+             float:left;
+             width:125px;
+             height: 2em;
+             background-color:#A3906A;
+            
+              }
+
+           ol a
+             {
+             text-decoration: none;
+             display:block;
+              }
+
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+width:125px;
+}
+
+              ul li a
+              {
+              text-decoration: none;
+              }
+
+ol li ul li
+{
+width: 125px;
+border: 2px solid black;
+border-bottom:none;
+}
+
+ol li ul li:last-child
+{
+border-bottom: 2px solid;
+}
+
+ol li ul li a
+{
+width:125px;
+float:left;
+}
+
+ol li ul
+{
+display:none;
+}
+
+ol li a:hover
+{
+color:#ADEAEA;
+}
+
+ol li:hover
+{
+background-color:#330000;
+}
+
+ol li:hover ul
+{
+display:block;
+}
+
+
+/*TABELKA*/
+
+table
+{
+font-size:20px;
+float: left;
+margin-top:50px;
+margin-left: 100px;
+border: 2px solid black;
+text-align: center;
+width:450px;
+}
+
+tr,td,th
+{
+border: 2px solid black;
+}
+
+
+
+/*KLASY*/
+
+p.tytul
+{
+text-align:center;
+margin:50px;
+font-size:40px;
+font-style:normal;
+font-weight:bold;
+color: #660000;
+}
+
+
+p.odnosniki
+{
+text-align:center;
+margin-right:50px;
+margin-bottom:100px;
+font-style:normal;
+font-size:30px;
+}
+
+p.tekst
+{
+font-size:20px;
+margin:50px;
+font-style:normal;
+color:black;
+text-align:left;
+}
+
+p.kontakt
+{
+font-size:17px;
+margin:30px;
+font-style:normal;
+font-weight:bold;
+color:black;
+text-align:center;
+}
+
+
+
+
+
+/* UWAGA TWORZE GALERIE MOZE BYC PRZYPAL*/
+
+img
+{
+border:0px;
+padding:0px;
+}
+
+a:focus
+{
+outline:none;
+}
+
+
+#pudlo {
+    border: none;
+    margin: auto;
+    width: 800px;
+    position:relative;
+}
+
+.galeria {
+    float:left;
+    margin-left:15%;
+}
+
+.duzy
+{
+    display:block;
+    
+}
+
+.miniatury
+{
+    margin: 0px;
+  
+}
+
+.miniatury ul 
+{
+        list-style: none;
+        overflow:hidden;
+        padding: 0px;
+        margin: 0px;
+        width: auto;
+
+}
+
+.miniatury li 
+{
+        display: inline;
+        float:left;
+        width: auto;
+        margin-left:5px;
+        margin-bottom: 5px;
+        padding: 0px;
+    }
+
+.miniatury li a img 
+{
+         display: block;
+       
+}
+
+
+
+
+
+/*DIVY*/
+
+
+#tytul
+{
+width: 60%;
+height: 180px;
+overflow:hidden;
+background-image: url("img/tytul_tlo.jpg");
+background-position:left;
+border-top:3px solid black;
+border-left:3px solid black;
+border-right:3px solid black;
+margin:auto;
+}
+
+
+#menu
+{
+    height: auto;
+    width: 60%;
+    margin:auto;
+    background-color: #A3906A;
+    text-align: center;
+    border-top:3px solid black;
+border-left:3px solid black;
+border-right:3px solid black;
+    position: relative;
+    font-size:15px;
+    font-weight:bold;
+    
+    
+   
+}
+
+#tekst
+{
+border-top:3px solid black;
+border-left:3px solid black;
+border-bottom:3px solid black;
+border-right:3px solid black;
+width:60%;
+height: auto;
+background-color:#FAE8C3;
+margin:auto;
+}
+
+
+#footer
+{
+width:100%;
+height:auto;
+background-color:#003333;
+display:block;
+margin-top:80px;
+color:white;
+}
+
+#nazwisko
+{
+    width:100%;
+    height:auto;
+    background-color:#003333;
+    display:block;
+    margin-top:-15px;
+}

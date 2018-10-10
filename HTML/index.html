@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+   <title>Moje hobby</title>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="surrealizm, malarstwo, surreali�ci, arty�ci, sztuka" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+ 
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+</head>
+
+
+<body onload="czas()">
+   
+
+<div id="tytul">
+             <h2>Malarstwo surrealistyczne</h2>
+        </div>
+
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+                </nav>
+</aside>
+    </div>
+     
+    <div id="tekst">
+        <p class="tytul">Moja strona!</p>
+        <p class="tekst">Witaj na mojej stronie!<br />Nazywam się Laura Żuchowska. Moją pasją jest malarstwo. W szczególności urzekły mnie prace z gatunku surrealizmu. Moimi ulubionymi artystami są: Zdzisław Beksiński, Jacek Yerka, Salvador Dali i Hieronim Bosch, którym poświęcę moją stronę.<br /><br /></p>
+
+        <img src="img/s1.jpg" class="glowna" alt="Nie wiem czyje to ale ladne" />
+        <img src="img/s2.jpg" class="glowna" alt="Salvador Dali" />
+        <img src="img/s3.jpg" class="glowna" alt="Max Ernst" />
+
+        <p class="tekst">Jeśli uważasz, że mojej stronie czegoś brakuje, skontaktuj się proszę ze mną - więcej informacji pod zakładką "Ankieta". Jeśli potrzebujesz więcej informacji odnośnie kierunku, zajrzyj pod zakładkę "Kontakt".</p>
+
+    </div>
+     
+<div id="footer">
+
+    <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+    </script>
+       
+</div>
+    <div id="nazwisko">
+        <h4>Laura Żuchowska</h4>
+    </div>
+
+
+</body>
+</html>

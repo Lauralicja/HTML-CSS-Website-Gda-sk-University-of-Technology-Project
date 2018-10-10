@@ -1,0 +1,114 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+
+<head>
+    <title>Moje hobby</title>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="surrealizm, malarstwo, surreali�ci, arty�ci, sztuka" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="main.js"></script>
+    <script src="zegar.js"></script>
+</head>
+
+
+<body onload="czas()">
+
+
+    <div id="tytul">
+        <h2>Malarstwo surrealistyczne</h2>
+    </div>
+
+    <div id="menu">
+        <aside>
+            <span class="expand">&equiv;</span>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li>   <a href="surrealizm.html">O surrealizmie</a></li>
+                    <li>
+                        <a href="beksinski.html">Zdzisław Beksiński</a>
+                        <ul>
+                            <li><a href="biografia_beksinski.html">Biografia</a></li>
+                            <li><a href="obrazy_beksinski.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yerka.html">Jacek Yerka</a>
+                        <ul>
+                            <li><a href="biografia_yerka.html">Biografia</a></li>
+                            <li><a href="obrazy_yerka.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dali.html">Salvador Dali</a>
+                        <ul>
+                            <li><a href="biografia_dali.html">Biografia</a></li>
+                            <li><a href="obrazy_dali.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bosch.html">Hieronim Bosch</a>
+                        <ul>
+                            <li><a href="biografia_bosch.html">Biografia</a></li>
+                            <li><a href="obrazy_bosch.html">Obrazy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="zaw_dod.html">Ankieta i kontakt</a>
+                        <ul>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+
+    <div id="tekst">
+        <p class="tytul">Jacek "Yerka" Kowalski</p>
+        <p class="tekst">
+            Urodził się w 1952 roku w Toruniu. Studiował grafikę i malastwo w Polsce. W 1980 roku zaczął swoją karierę jako artysta.<br />Yerka inspiruje się w swoich pracach polskimi krajobrazami. Jego natchnieniem są artyści tacy jak Hieronim Bosch, Pieter Bruegel czy Jan van Eyck.<br /> Jest on także twórcą wielu plakatów, ilustracji czy okładek.<br />W 1995 roku dostał nagrodę World Fantasy Award. Wiele jego dzieł możemy podziwiać zarówno w Polsce, jak i za granicą (najwięcej prac możemy zobaczyć w Niemczech, Francji oraz USA).
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            Źródło: <a href="http://www.yerkaland.com/?page_id=141">Oficjalna strona artysty</a>
+
+
+        </p>
+
+        <p class="tekst">
+            <button onclick="paragraf()">Yerka o swojej sztuce</button></p>
+
+        <script>
+            function paragraf() {
+                var para = document.createElement("P");
+                var t = document.createTextNode("My greatest source of inspiration is always (and I bet will be) my childhood souvenirs. That places, remembered feelings, fragrances and technique of 1950s . You can see it in : Between Heaven and Hell, Attack at dawn, Summer in the city, Paradise in the yard or Halloween.");
+                para.appendChild(t);
+                document.getElementById("tekst").appendChild(para);
+            }
+
+
+        </script>
+
+</div>
+
+
+
+
+    <div id="footer">
+
+        <script type="text/javascript">
+                document.getElementById("footer").innerHTML =
+                 dzien + "." + miesiac + "." + rok + " || " + godzina + ":" + minuta + ":" + sekunda;
+        </script>
+
+    </div>
+    <div id="nazwisko">
+        <h4>Laura Żuchowska</h4>
+    </div>
+
+</body>
+</html>
